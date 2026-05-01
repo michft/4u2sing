@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7efe0;
+  --foreground: #20150f;
+  --card: rgba(255, 250, 241, 0.92);
+  --card-strong: #fff6e6;
+  --border: rgba(82, 43, 18, 0.16);
+  --accent: #d65a1f;
+  --accent-strong: #8f2f11;
+  --muted: #6f5749;
+  --success: #1f8f4d;
+  --warning: #f0a638;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(255, 213, 153, 0.72), transparent 38%),
+    linear-gradient(180deg, #fff7eb 0%, #f5ebda 32%, #f1e3cb 100%);
+}
+
+body {
+  margin: 0;
+  background: transparent;
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(214, 90, 31, 0.12), transparent 22%),
+    radial-gradient(circle at 85% 18%, rgba(240, 166, 56, 0.18), transparent 24%);
+}
